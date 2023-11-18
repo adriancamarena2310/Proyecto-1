@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-heroes-hero',
-  templateUrl: './hero.component.html',
   standalone: true,
+  templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.css']
 })
 export class HeroComponent {
@@ -25,5 +25,10 @@ export class HeroComponent {
 
   changeAge():void{
     this.age = 10;
+  }
+
+  resertForm():void{
+    this.name = 'ironman';
+    this.age = 45;
   }
 }
