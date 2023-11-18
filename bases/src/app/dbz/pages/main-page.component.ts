@@ -20,8 +20,12 @@ public characters: Character[] = [{
 }];
 
 onNewCharacter(character: Character):void{
-console.log("Main page");
-console.log(character);
+this.characters.push(character);
 }
+
+onCharacter( xxxx : xxxx) {
+  this.characters.splice
+}
+
 
 }

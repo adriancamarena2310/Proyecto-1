@@ -9,18 +9,21 @@
 
 
 
-    class="list-group-item" [ngClass]="{
+    class="list-group-item d-flex justify-content-between"
+    [ngClass]="{
       'list-group-item-dark': isLast,
       'list-group-item-primary': isEven
     }">
-
-    <span class="text-primary">{{ i + 1 }}</span>
-
+    <div>
+      <span class="text-primary">
+    {{ i + 1 }}</span>
     {{ character.name }} -
-
     <strong>Power</strong>
-
     {{  character.power }}
+    </div>
+
+    <button class="btn btn-danger"
+    (click)="onDeleteCharacter(i)"> X </button>
 
   <!--  <span>Es el primero {{ isFirst }}</span>
 
