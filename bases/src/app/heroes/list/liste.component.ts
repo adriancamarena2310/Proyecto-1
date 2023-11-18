@@ -1,3 +1,4 @@
+import { ListComponent } from './../../dbz/components/list/list.component';
 import { Component } from '@angular/core';
 
 @Component({
@@ -5,7 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css']
 })
-export class ListComponent {
+export class ListComponente {
 
   public heroNames: string[] = ['Spiderman','Ironman','Hulk','She Hulk', 'Thor'];
   public deletedHero?: string;
