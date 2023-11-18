@@ -18,4 +18,10 @@ public characters: Character[] = [{
   name: "vegeta",
   power: 7000
 }];
+
+onNewCharacter(character: Character):void{
+console.log("Main page");
+console.log(character);
+}
+
 }
