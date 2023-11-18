@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   public title:string = 'Bases';
   public counter:number = 10;
+
+  increseBy( value:number):void{
+    this.counter += value;
+  }
+
+  resetCounter(){
+    this.counter = 10;
+  }
 }
