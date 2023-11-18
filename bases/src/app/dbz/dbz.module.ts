@@ -6,7 +6,12 @@ import { MainPageComponent } from './pages/main-page.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    MainPageComponent
+  ],
+  exports: [
+    MainPageComponent
+  ],
   imports: [
     CommonModule
   ]
