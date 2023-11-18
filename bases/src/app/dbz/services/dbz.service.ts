@@ -22,7 +22,7 @@ public characters: Character[] = [{
   power: 7000
 }];
 
-onNewCharacter(character: Character):void{
+addCharacter(character: Character):void{
   const newCharacter: Character = {id: uuid(), ...character};
 
   this.characters.push(newCharacter);
