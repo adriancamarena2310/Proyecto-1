@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Bases';
+  public title:string = 'Bases';
+  public counter:number = 10;
 }
