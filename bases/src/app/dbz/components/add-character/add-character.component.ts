@@ -19,7 +19,6 @@ export class AddCharacterComponent {
 
   emitCharacter():void{
     console.log(this.character);
-
     this.onNewCharacter.emit(this.character);
 
     this.character.name = "";
